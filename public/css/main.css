@@ -1,0 +1,62 @@
+/* common css start */
+.border-primary-bottom {
+    border-bottom: 5px solid #6b73ff;
+}
+
+.text-primary {
+    color: #727272;
+}
+
+/* common css end */
+/* footer css start */
+div#footer-container {
+    background-color: #333;
+    margin-top: 0;
+    border-top: 5px solid #6b73ff;
+}
+
+div#footer-container .row.footer-logo-container {
+    border-bottom: 1px solid #727272;
+}
+
+div#footer-container .row.footer-logo-container .site-footer-title {
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #d9d9d9;
+}
+
+div#footer-container .row.footer-nav-container div.footer-nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    line-height: initial;
+    padding: 10px 0;
+}
+
+div#footer-container .row.footer-nav-container div.footer-nav ul li {
+    font-size: 0.9rem;
+    font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: inline-block;
+    border-right: 1px solid gray;
+}
+
+div#footer-container .row.footer-logo-container .site-footer-title a:active,
+div#footer-container .row.footer-logo-container .site-footer-title a:focus,
+div#footer-container .row.footer-logo-container .site-footer-title a:link,
+div#footer-container .row.footer-logo-container .site-footer-title a:visited,
+div#footer-container .row.footer-nav-container div.footer-nav ul li a:active,
+div#footer-container .row.footer-nav-container div.footer-nav ul li a:focus,
+div#footer-container .row.footer-nav-container div.footer-nav ul li a:link,
+div#footer-container .row.footer-nav-container div.footer-nav ul li a:visited {
+    color: #d9d9d9;
+}
+
+div#footer-container .row.footer-nav-container div.footer-nav ul li a {
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-right: 10px;
+}
+/* footer css end */
+/* common css start */
+
+/* common css end */
