@@ -19,7 +19,7 @@ import {
 } from "@chakra-ui/react";
 import MyCountry from "../../country.json";
 import { v4 as uuidv4 } from "uuid";
-import db, { auth, firebase } from "../../firebase";
+import db, { auth, storage } from "../../firebase";
 import { useState } from "react";
 import axios from "axios";
 const Form = () => {
@@ -104,15 +104,11 @@ How did you know about us? : ${json.know_about_us},
   });
   const uploadFile = async (file) => {
     if (file) {
-      const data = new FormData();
-      data.append("file", file);
-      data.append("upload_preset", "imperial");
-      data.append("cloud_name", "dmsqmh09j");
-      const res = await axios.post(
-        "https://api.cloudinary.com/v1_1/dmsqmh09j/image/upload",
-        data
-      );
-      return res.data.url;
+      const fileName = `/files/${uuidv4()}-${file.name}`;
+      const fileRef = storage.ref(fileName);
+      const task = await fileRef.put(file);
+      const url = await task.ref.getDownloadURL();
+      return url;
     } else {
       return "";
     }
