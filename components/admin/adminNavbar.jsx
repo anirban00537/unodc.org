@@ -59,17 +59,17 @@ export default function Simple() {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={"center"}>
-            <Box>LoanDirect Admin</Box>
+            <Box>Unodc Admin</Box>
             <HStack
               as={"nav"}
               spacing={4}
               display={{ base: "none", md: "flex" }}
             >
-              {Links.map((link, index) => (
+              {/* {Links.map((link, index) => (
                 <Link key={index} href={link?.link}>
                   {link?.name}
                 </Link>
-              ))}
+              ))} */}
             </HStack>
           </HStack>
           <Flex alignItems={"center"}>
