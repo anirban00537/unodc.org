@@ -7,14 +7,13 @@ import firebase from "firebase";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyD17i_gz3kO3F-kUIxEuD3IE0hOSlgveMM",
-  // authDomain: "loanapp-6263b.firebaseapp.com",
-  databaseURL: "lending-app.vercel.app",
-  projectId: "loanapp-6263b",
-  storageBucket: "loanapp-6263b.appspot.com",
-  messagingSenderId: "1630579191",
-  appId: "1:1630579191:web:01ae8d6cea5936056966f2",
-  measurementId: "G-Y0E08G3YEH",
+  apiKey: "AIzaSyCqlZ7pKywawVHL-osPpPki2XQ0XRIdDeE",
+  authDomain: "undoc-98f38.firebaseapp.com",
+  projectId: "undoc-98f38",
+  storageBucket: "undoc-98f38.appspot.com",
+  messagingSenderId: "1010424287140",
+  appId: "1:1010424287140:web:e2446639e2ca9cadc1fb31",
+  measurementId: "G-WXPVB7SMKD",
 };
 
 const firebaseApp = !firebase.apps.length
